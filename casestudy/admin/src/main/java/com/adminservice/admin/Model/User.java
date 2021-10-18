@@ -1,10 +1,7 @@
-package com.userservice.user;
+package com.adminservice.admin.Model;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
-
-import java.util.HashSet;
-import java.util.Set;
 
 @Document(collection = "User")
 public class User {

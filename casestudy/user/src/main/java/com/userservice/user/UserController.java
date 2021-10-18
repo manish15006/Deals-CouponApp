@@ -43,10 +43,10 @@ public class UserController {
         userRepository.save(user);
         return "user is Updated Succesfully";
     }
-    //--------------user-getCoupons---------------------------------------------------------------
-    @RequestMapping(value = "/getCoupons")
-    public String getAllCoupons(){
-        return restTemplate.getForObject("http://coupons/coupons/list",String.class);
-    }
+//    //--------------user-getCoupons---------------------------------------------------------------
+//    @RequestMapping(value = "/getCoupons")
+//    public String getAllCoupons(){
+//        return restTemplate.getForObject("http://coupons/coupons/list",String.class);
+//    }
 
 }
