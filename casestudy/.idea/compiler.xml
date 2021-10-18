@@ -11,10 +11,12 @@
         <module name="user" />
         <module name="Eureka-server" />
         <module name="gateway" />
+        <module name="cart" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="admin" target="11" />
+      <module name="cart" target="11" />
       <module name="category" target="11" />
       <module name="coupon" target="11" />
       <module name="deal" target="11" />
@@ -31,6 +33,7 @@
       <module name="SpringLogin" options="-parameters" />
       <module name="ZuulGateway" options="-parameters" />
       <module name="admin" options="-parameters" />
+      <module name="cart" options="-parameters" />
       <module name="category" options="-parameters" />
       <module name="coupon" options="-parameters" />
       <module name="deal" options="-parameters" />
