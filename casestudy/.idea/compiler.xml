@@ -7,9 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="admin" />
-        <module name="deal" />
         <module name="coupon" />
-        <module name="category" />
         <module name="user" />
         <module name="Eureka-server" />
       </profile>
@@ -20,12 +18,14 @@
       <module name="coupon" target="11" />
       <module name="deal" target="11" />
       <module name="Eureka-server" target="11" />
+      <module name="SpringLogin" target="11" />
       <module name="user" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Eureka-server" options="-parameters" />
+      <module name="SpringLogin" options="-parameters" />
       <module name="admin" options="-parameters" />
       <module name="category" options="-parameters" />
       <module name="coupon" options="-parameters" />

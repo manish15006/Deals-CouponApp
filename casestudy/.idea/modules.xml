@@ -3,11 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Eureka-server/Eureka-server.iml" filepath="$PROJECT_DIR$/Eureka-server/Eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringLogin/SpringLogin.iml" filepath="$PROJECT_DIR$/SpringLogin/SpringLogin.iml" />
       <module fileurl="file://$PROJECT_DIR$/admin/admin.iml" filepath="$PROJECT_DIR$/admin/admin.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/casestudy.iml" filepath="$PROJECT_DIR$/.idea/casestudy.iml" />
-      <module fileurl="file://$PROJECT_DIR$/category/category.iml" filepath="$PROJECT_DIR$/category/category.iml" />
       <module fileurl="file://$PROJECT_DIR$/coupon/coupon.iml" filepath="$PROJECT_DIR$/coupon/coupon.iml" />
-      <module fileurl="file://$PROJECT_DIR$/deal/deal.iml" filepath="$PROJECT_DIR$/deal/deal.iml" />
       <module fileurl="file://$PROJECT_DIR$/user/user.iml" filepath="$PROJECT_DIR$/user/user.iml" />
     </modules>
   </component>

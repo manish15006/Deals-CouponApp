@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -23,7 +24,6 @@ public class UserController {
     public List<User> getAllUsers(){
         return userRepository.findAll();
     }
-
     //addUsers
     @PostMapping(value = "/addUser")
     public String addUser(@RequestBody User user){
@@ -43,9 +43,10 @@ public class UserController {
         userRepository.save(user);
         return "user is Updated Succesfully";
     }
-    //--------------user-getCoupons-------------------
+    //--------------user-getCoupons---------------------------------------------------------------
     @RequestMapping(value = "/getCoupons")
-    public List<Coupon> getAllCoupons(){
-        return Arrays.asList(restTemplate.getForObject("http://coupons/coupons/list",Coupon[].class));
+    public String getAllCoupons(){
+        return restTemplate.getForObject("http://coupons/coupons/list",String.class);
     }
+
 }
