@@ -1,6 +1,5 @@
 package com.userservice.user;
 
-import com.userservice.user.Coupon;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -11,15 +10,26 @@ import java.util.Set;
 public class User {
     @Id
     private String id;
+    private String firstName;
+    private String lastName;
+    private String email;
+    private String mobileNumber;
+    private String gender;
+    private String age;
     private String userName;
     private String password;
-    private Set<Coupon> coupons = new HashSet<Coupon>();
+    //private Set<Coupon> coupons = new HashSet<Coupon>();
 
-    public User(String id, String userName, String password, Set<Coupon> coupons) {
+    public User(String id, String firstName, String lastName, String email, String mobileNumber, String gender, String age, String userName, String password) {
         this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.mobileNumber = mobileNumber;
+        this.gender = gender;
+        this.age = age;
         this.userName = userName;
         this.password = password;
-        this.coupons = coupons;
     }
 
     public String getId() {
@@ -28,6 +38,54 @@ public class User {
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getMobileNumber() {
+        return mobileNumber;
+    }
+
+    public void setMobileNumber(String mobileNumber) {
+        this.mobileNumber = mobileNumber;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public String getAge() {
+        return age;
+    }
+
+    public void setAge(String age) {
+        this.age = age;
     }
 
     public String getUserName() {
@@ -46,10 +104,18 @@ public class User {
         this.password = password;
     }
 
-    public Set<Coupon> getCoupons() {
-        return coupons;
-    }
-    public void setCoupons(Set<Coupon> coupons) {
-        this.coupons = coupons;
+    @Override
+    public String toString() {
+        return "User{" +
+                "id='" + id + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", email='" + email + '\'' +
+                ", mobileNumber='" + mobileNumber + '\'' +
+                ", gender='" + gender + '\'' +
+                ", age='" + age + '\'' +
+                ", userName='" + userName + '\'' +
+                ", password='" + password + '\'' +
+                '}';
     }
 }

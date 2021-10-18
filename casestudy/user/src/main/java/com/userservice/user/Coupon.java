@@ -12,17 +12,19 @@ public class Coupon {
     private String code;
     private String category;
     private String description;
+    private String expiryDate;
 
     public Coupon() {
     }
 
-    public Coupon(String id, String provider, String code, String category, String description) {
+    public Coupon(String id, String provider, String code, String category, String description, String expiryDate) {
         super();
         this.id = id;
         this.provider = provider;
         this.code = code;
         this.category = category;
         this.description = description;
+        this.expiryDate = expiryDate;
     }
     public String getId() {
         return id;
@@ -53,5 +55,13 @@ public class Coupon {
     }
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public String getExpiryDate() {
+        return expiryDate;
+    }
+
+    public void setExpiryDate(String expiryDate) {
+        this.expiryDate = expiryDate;
     }
 }

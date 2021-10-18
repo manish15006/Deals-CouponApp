@@ -10,6 +10,7 @@
         <module name="coupon" />
         <module name="user" />
         <module name="Eureka-server" />
+        <module name="gateway" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -18,18 +19,22 @@
       <module name="coupon" target="11" />
       <module name="deal" target="11" />
       <module name="Eureka-server" target="11" />
+      <module name="gateway" target="11" />
       <module name="SpringLogin" target="11" />
       <module name="user" target="11" />
+      <module name="ZuulGateway" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Eureka-server" options="-parameters" />
       <module name="SpringLogin" options="-parameters" />
+      <module name="ZuulGateway" options="-parameters" />
       <module name="admin" options="-parameters" />
       <module name="category" options="-parameters" />
       <module name="coupon" options="-parameters" />
       <module name="deal" options="-parameters" />
+      <module name="gateway" options="-parameters" />
       <module name="user" options="-parameters" />
     </option>
   </component>
